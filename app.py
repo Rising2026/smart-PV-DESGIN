@@ -95,7 +95,7 @@ grid_html = "".join([f'<div style="display:flex; gap:10px; margin-bottom:10px;">
                      "".join(['<div style="width:60px; height:100px; background-color:#1a73e8; border:2px solid #fff; border-radius:5px;"></div>' for _ in range(cols)]) + 
                      '</div>' for _ in range(rows)])
 
-st.markdown(f'<div style="background-color:#2c3e50; padding:30px; border-radius:15px; display:inline-block;">{grid_html}</div>', unsafe_allow_all=True)
+st.markdown(f'<div style="background-color:#2c3e50; padding:30px; border-radius:15px; display:inline-block;">{grid_html}</div>', unsafe_allow_html=True)
 
 # --- Material List (BOM) ---
 st.subheader("📦 Bill of Materials")
